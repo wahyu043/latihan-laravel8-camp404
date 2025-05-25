@@ -1,0 +1,41 @@
+# Laravel
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# Laravel 8: storage & cache
+/storage/app/public
+/storage/framework/cache/data
+/storage/logs
+
+# IDE & Editor
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Composer
+composer.lock
+
+# OS Generated
+*.log
+
+# Optional: laravel mix cache
+/public/hot
+/public/mix-manifest.json
+/public/js/*.js
+/public/css/*.css
+
+# Optional: jika pakai sail/docker
+docker-compose.override.yml
