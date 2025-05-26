@@ -1,5 +1,8 @@
 # Laravel 8 CRUD Siswa - CAMP404
 
+[![Laravel](https://img.shields.io/badge/Laravel-8-red)]()
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen)]()
+
 Sebuah proyek latihan CRUD (Create, Read, Update, Delete) sederhana menggunakan **Laravel 8**.  
 Dibuat sebagai bagian dari pembelajaran Laravel bersama CAMP404 — dilengkapi fitur login dan hak akses berdasarkan role (`admin` dan `siswa`).
 
@@ -48,6 +51,3 @@ Akses via browser: http://127.0.0.1:8000
 
 📄 Lisensi
 Proyek ini dibuat untuk pembelajaran dan tidak memiliki lisensi komersial.
-
-[![Laravel](https://img.shields.io/badge/Laravel-8-red)]()
-[![Status](https://img.shields.io/badge/Status-Completed-brightgreen)]()
