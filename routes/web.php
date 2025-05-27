@@ -3,6 +3,8 @@
 use App\Http\Controllers\SiswaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\UserController;
+
 
 
 /*
@@ -25,6 +27,10 @@ Route::get('/info-kegiatan', [MenuController::class, 'info_kegiatan']);
 Route::get('/data-siswa', [MenuController::class, 'data_siswa']);
 Route::resource('siswa', SiswaController::class)->middleware('can:isAdmin');
 Route::resource('siswa', SiswaController::class)->only('show')->middleware('can:isAdminSiswa');
+Route::middleware(['auth', 'can:isSuperAdmin'])->group(function () {
+    Route::resource('users', UserController::class);
+});
+
 
 Auth::routes();
 

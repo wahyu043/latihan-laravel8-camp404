@@ -21,6 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role', // ⬅️ ini penting untuk manajemen user
+
     ];
 
     /**

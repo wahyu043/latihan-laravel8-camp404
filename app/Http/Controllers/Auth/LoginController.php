@@ -42,12 +42,19 @@ class LoginController extends Controller
 
     public function redirectTo()
     {
-        if (Auth::user()->role == 'admin') {
-            $this->redirectTo = route('siswa.index');
-            return $this->redirectTo;
-        } else {
-            $this->redirectTo = route('siswa.show', Auth::user()->siswa_id);
-            return $this->redirectTo;
+        $user = Auth::user();
+
+        if ($user->role == 'super-admin') {
+            return route('users.index'); // Halaman manajemen user
+        } elseif ($user->role == 'admin') {
+            return route('siswa.index'); // Halaman manajemen siswa
+        } elseif ($user->role == 'siswa') {
+            return route('siswa.show', $user->siswa_id); // Khusus siswa
         }
+    }
+
+    public function loggedOut(\Illuminate\Http\Request $request)
+    {
+        return redirect('/beranda'); // Ganti '/beranda' sesuai route kamu
     }
 }
