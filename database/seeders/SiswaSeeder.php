@@ -22,13 +22,13 @@ class SiswaSeeder extends Seeder
         DB::table('siswa')->insert([
             'nama' => 'Nisa Fitriya',
             'nis' => 103,
-            'tgl_lahir' => '2004-01-30'
+            'tgl_lahir' => '2004-05-30'
         ]);
 
         DB::table('siswa')->insert([
-            'nama' => 'Nisa Fitriya',
-            'nis' => 103,
-            'tgl_lahir' => '2004-01-30'
+            'nama' => 'Wahyu Mahmudi',
+            'nis' => 104,
+            'tgl_lahir' => '2003-02-25'
         ]);
     }
 }
