@@ -14,19 +14,19 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => 'Pak Guru',
-            'role' => 'admin',
-            'email' => 'admin@camp404.com',
-            'password' => bcrypt('password123')
-        ]);
-        DB::table('users')->insert([
-            'name' => 'Andi Saputra',
-            'role' => 'siswa',
-            'siswa_id' => 1,
-            'email' => 'andi@camp404.com',
-            'password' => bcrypt('password123')
-        ]);
+        // DB::table('users')->insert([
+        //     'name' => 'Pak Guru',
+        //     'role' => 'admin',
+        //     'email' => 'admin@camp404.com',
+        //     'password' => bcrypt('password123')
+        // ]);
+        // DB::table('users')->insert([
+        //     'name' => 'Andi Saputra',
+        //     'role' => 'siswa',
+        //     'siswa_id' => 1,
+        //     'email' => 'andi@camp404.com',
+        //     'password' => bcrypt('password123')
+        // ]);
         DB::table('users')->insert([
             'name' => 'Budi Cahya',
             'role' => 'siswa',

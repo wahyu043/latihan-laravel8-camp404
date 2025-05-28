@@ -41,6 +41,13 @@
                         <li>
                             <a href="{{ url('/info-kegiatan') }}" class="nav-link">Info Kegiatan</a>
                         </li>
+
+                        @can('isSuperAdmin')
+                        <li>
+                            <a href="{{ route('users.index') }}" class="nav-link">Manajemen User</a>
+                        </li>
+                        @endcan
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
